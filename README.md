@@ -3,7 +3,7 @@
 
 ### Setup Instructions
 1. Clone the repository to your local machine.
-2. Install the required packages by running `pip install -r requirements.txt` in the terminal.(Note that this code was executed on Google Collab hence the requiremens.txt instead try to  implement directly on collab as per notebook)
+2. Install the required packages by running `pip install -r requirements.txt` in the terminal.(Note that this code was executed on Google Collab hence the requiremens.txt might be big instead try to implement directly on collab as per notebook)
 3. Set up your Reddit API credentials by replacing `client_id`, `client_secret`, and `user_agent` with your own credentials.
 4. Set up your OpenAI API key by replacing `openai.api_key` with your own key.
 5. Run the script by executing `python script_name.py` in the terminal.
