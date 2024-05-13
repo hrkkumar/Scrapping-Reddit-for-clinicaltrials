@@ -9,15 +9,17 @@
 5. Run the script by executing `python script_name.py` in the terminal.
 
 ### Methodology and Challenges
-This project utilizes natural language processing (NLP) and machine learning techniques to analyze Reddit posts and comments pertaining to medical research and clinical trials. The methodology includes:
-- Data collection from relevant subreddits using the Reddit API.
-- Data preprocessing involving tokenization, stopword removal, and lemmatization.
-- Sentiment analysis using a pre-trained model.
+This project utilizes natural language processing (NLP) and machine learning techniques to analyze Reddit posts and comments about medical research and clinical trials. The methodology includes:
+- Data collection from relevant subreddits using the Reddit API.(Subreddits were chosen by querying MetaAI(Llama 3) as it could potentially give subreddits with the data until 2023) 
+- Data preprocessing involving tokenization and padding.
+- Sentiment analysis using a pre-trained model(twitter-roberta-base-sentiment-latest).
 - Personalized message generation with OpenAI's GPT-3.5-turbo-instruct model.
 
 Challenges faced during the project:
 - Handling the large volume of data collected from the Reddit API.
-- Fine-tuning the sentiment analysis model for accurate classification of medical-related text.
+- Finding the appropriate subreddits that would contain posts and comments related to clinical trials and health conditions related to it
+- Choosing a model for performing sentimental analysis on medical-related text since here the Reddit posts may or may not be completely medical. I have used a pre-trained model for this project which could be further improved with In-house models.
+- Since the Open AI account is of the free tier you may not execute many calls you might easily exceed the quota allocated to you, Hence make sure that you have a separate account dedicated to running this project if possible.
 
 ### Data Collected, Analysis Performed, and Messages Generated
 #### Data Collected:
@@ -25,18 +27,21 @@ Challenges faced during the project:
 #### Analysis Performed:
 - Sentiment analysis results for each post and comment.
 #### Examples:
-- **Post Title:** "New clinical trial for cancer treatment"
-  **Post Text:** "Has anyone participated in this trial? What were your experiences?"
-  **Sentiment Analysis Result:** Positive
+  **Post Text:** "Free healthcare in Belize destroyed my niece's health.\nFree though."
+  **Sentiment Analysis Result:** Negative
 #### Messages Generated:
-- "Thank you for sharing your concerns about clinical trials. We understand your worries and want to assure you that we prioritize participant well-being in all our communications."
-- "We appreciate your interest in medical research! Clinical trials are an essential step in advancing healthcare, and we're happy to answer any questions you may have."
+##### Negative Sentiment
+![image](https://github.com/hrkkumar/Scrapping-Reddit-for-clinicaltrials/assets/163475218/ea52c35e-a6bd-4f55-898b-b1cd1c49abc5)
+
+##### Neutral Sentiment
+
+
 
 ### Ethical Considerations
-1. **Transparency:** Ensured transparency in data collection and analysis methods.
-2. **Privacy:** Avoided collecting personally identifiable information (PII) from Reddit users.
-3. **Bias Prevention:** Implemented measures to prevent bias in sentiment analysis and generated messages.
-4. **Responsible AI Usage:** Ensured ethical and responsible usage of OpenAI's language generation tool.
+1. **Transparency:** Ensured transparency in data collection and analysis methods by searching through the most trusted subreddits posts based on the reliability percentage
+2. **Privacy:** Avoided collecting personally identifiable information (PII) from Reddit users by masking emails and phone numbers in the data.
+3. **Bias Prevention:** Implemented measures to prevent bias in sentiment analysis and generated messages by addressing most of the issues faced.
+
 
 ### Output
 The script outputs collected data, sentiment analysis results, and generated messages in JSON format, saved in `reddit_data.json`, `reddit_sentiments.json`, and `messages.json` respectively.
