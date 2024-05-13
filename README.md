@@ -1,5 +1,4 @@
 # Scrapping-Reddit-for-clinicaltrials
-**README**
 
 ### Setup Instructions
 1. Clone the repository to your local machine.
