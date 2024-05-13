@@ -31,17 +31,21 @@ Challenges faced during the project:
   **Sentiment Analysis Result:** Negative
 #### Messages Generated:
 ##### Negative Sentiment
-![image](https://github.com/hrkkumar/Scrapping-Reddit-for-clinicaltrials/assets/163475218/ea52c35e-a6bd-4f55-898b-b1cd1c49abc5)
+###### Post: Free healthcare in Belize destroyed my niece's health.Free though
+###### message generated
+![image](https://github.com/hrkkumar/Scrapping-Reddit-for-clinicaltrials/assets/163475218/c573b284-5c46-46d0-96ad-8faaedb184ba)
 
-##### Neutral Sentiment
+
+##### Positive Sentiment
+###### Post: I honestly can't thank you enough for sharing this. Because of this post, im sitting in the waiting room after getting my first vaccine in the Moderna adolescent trial. Thank you so much
+###### message generated
+![image](https://github.com/hrkkumar/Scrapping-Reddit-for-clinicaltrials/assets/163475218/85e8480d-2f2f-4551-9373-ed1434d66d00)
+
 
 
 
 ### Ethical Considerations
 1. **Transparency:** Ensured transparency in data collection and analysis methods by searching through the most trusted subreddits posts based on the reliability percentage
 2. **Privacy:** Avoided collecting personally identifiable information (PII) from Reddit users by masking emails and phone numbers in the data.
-3. **Bias Prevention:** Implemented measures to prevent bias in sentiment analysis and generated messages by addressing most of the issues faced.
+3. **Bias Prevention:** Implemented measures to prevent bias in sentiment analysis and generated messages by tailoring the output according to the context.
 
-
-### Output
-The script outputs collected data, sentiment analysis results, and generated messages in JSON format, saved in `reddit_data.json`, `reddit_sentiments.json`, and `messages.json` respectively.
