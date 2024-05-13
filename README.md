@@ -26,23 +26,18 @@ Challenges faced during the project:
 - Posts and comments from subreddits related to medical research and clinical trials.
 #### Analysis Performed:
 - Sentiment analysis results for each post and comment.
-#### Examples:
-  **Post Text:** "Free healthcare in Belize destroyed my niece's health.\nFree though."
-  **Sentiment Analysis Result:** Negative
+
 #### Messages Generated:
+
 ##### Negative Sentiment
 ###### Post: Free healthcare in Belize destroyed my niece's health.Free though
 ###### message generated
 ![image](https://github.com/hrkkumar/Scrapping-Reddit-for-clinicaltrials/assets/163475218/c573b284-5c46-46d0-96ad-8faaedb184ba)
 
-
 ##### Positive Sentiment
 ###### Post: I honestly can't thank you enough for sharing this. Because of this post, im sitting in the waiting room after getting my first vaccine in the Moderna adolescent trial. Thank you so much
 ###### message generated
 ![image](https://github.com/hrkkumar/Scrapping-Reddit-for-clinicaltrials/assets/163475218/85e8480d-2f2f-4551-9373-ed1434d66d00)
-
-
-
 
 ### Ethical Considerations
 1. **Transparency:** Ensured transparency in data collection and analysis methods by searching through the most trusted subreddits posts based on the reliability percentage
